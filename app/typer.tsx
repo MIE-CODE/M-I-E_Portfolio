@@ -1,7 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-const typer = () => {
+const Typer = () => {
   const [text] = useTypewriter({
     words: ["Developer", "Software Engineere", "Nextjs Engn."],
     loop: 0,
@@ -14,4 +14,4 @@ const typer = () => {
   );
 };
 
-export default typer;
+export default Typer;
