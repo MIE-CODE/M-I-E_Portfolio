@@ -1,40 +1,45 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import menu from "../public/menu.svg";
-import Typer from "./typer";
+import Navbar from "./Navbar";
+import Modal from "./modal";
+import { useEffect, useState } from "react";
 
-const header = () => {
+const Header = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="flex w-full justify-between items-center py-[2rem] px-[2rem]">
-      <div className=" font-extrabold font-mono text-blue-200 text-4xl">
-        {" "}
-        <span className="text-blue-400 font-extrabold">I</span>
-        srael.
+    <>
+      <div className="flex font-test w-full justify-between items-center py-[2rem] px-[2rem] border-b-4 border-gray-400">
+        {showModal && <Modal hideModal={() => setShowModal(false)} />}
+        <div className=" font-extrabold  text-blue-200 text-4xl">
+          {" "}
+          <span className="text-blue-400 relative  font-extrabold">
+            {" "}
+            <span className=" absolute">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+              </span>
+            </span>
+            I
+          </span>
+          srael.
+        </div>
+        <Navbar className="flex gap-10  font-bold xl:gap-20 text-2xl" />
+        <div className=" bg-slate-400 rounded ">
+          <Image
+            onClick={() => {
+              setShowModal(true);
+            }}
+            src={menu}
+            alt="menu"
+            className="lg:hidden h-[40px] w-[40px]"
+          />
+        </div>
       </div>
-      <nav className="hidden lg:block ml-auto">
-        <ul className="flex gap-10 font-mono font-bold xl:gap-20 text-2xl">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Service</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div className=" bg-slate-400 rounded ">
-        <Image src={menu} alt="menu" className="lg:hidden h-[40px] w-[40px]" />
-      </div>
-    </div>
+    </>
   );
 };
 
-export default header;
+export default Header;

@@ -13,6 +13,7 @@
     "ngx-particlesjs": "^1.0.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-modal": "^3.16.1",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.12.2",
     "tsparticles-slim": "^2.12.0",
@@ -26,7 +27,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5"
   }
 }
