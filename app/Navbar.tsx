@@ -17,14 +17,17 @@ const Navbar = (props: {
       <div className=" flex mt-10 lg:mt-0  justify-center items-center ">
         <button
           onClick={props.onClick}
-          className=" bg-slate-900/40 lg:hidden rounded"
+          className=" after:bg-slate-600 bg-slate-900/40 lg:hidden rounded"
         >
           <Image src={close} alt="close" />
         </button>
       </div>
-      <ul className={props.className}>
+      <ul className={`${props.className} `}>
         <li>
-          <Link href="/" className="flex justify-center items-center">
+          <Link
+            href="/"
+            className="flex items-center lg:flex lg:justify-center lg:items-center"
+          >
             <p>Home</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +40,10 @@ const Navbar = (props: {
           </Link>
         </li>
         <li>
-          <Link href="/About" className="flex justify-center items-center">
+          <Link
+            href="/About"
+            className="flex items-center lg:flex lg:justify-center lg:items-center"
+          >
             <p>About</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +56,10 @@ const Navbar = (props: {
           </Link>
         </li>
         <li>
-          <Link href="/techStack" className="flex justify-center items-center">
+          <Link
+            href="/techStack"
+            className="flex pl-5 hover:bg-slate-500 items-center lg:flex lg:justify-center lg:items-center"
+          >
             <p>Tech Stack</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +72,10 @@ const Navbar = (props: {
           </Link>
         </li>
         <li>
-          <Link href="/Projects" className="flex justify-center items-center">
+          <Link
+            href="/Projects"
+            className="flex items-center lg:flex lg:justify-center lg:items-center"
+          >
             {" "}
             <p>Projects</p>
             <svg
@@ -77,7 +89,10 @@ const Navbar = (props: {
           </Link>
         </li>
         <li>
-          <Link href="/contacts" className="flex justify-center items-center">
+          <Link
+            href="/contacts"
+            className="flex items-center lg:flex lg:justify-center lg:items-center"
+          >
             <p>Contacts</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
