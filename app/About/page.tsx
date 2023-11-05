@@ -11,7 +11,9 @@ const page = () => {
         <p className=" font-mono text-blue-200/50 text-4xl font-extrabold">
           About
         </p>
-        <p className=" font-manrope text-sky-100">About (M’I’E)</p>
+        <p className=" font-manrope text-sky-100 animate-trans-right">
+          About (M’I’E)
+        </p>
       </div>
       <div className="text-purple-500 p-5  md:text-3xl">
         <Typer

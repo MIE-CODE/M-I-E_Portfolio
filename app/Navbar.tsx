@@ -24,9 +24,10 @@ const Navbar = (props: {
       </div>
       <ul className={`${props.className} `}>
         <Link href="/">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400 ">
+          <li className="flex transition-shadow  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Home</p>
             <svg
+              className=" fill-sky-400 "
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               viewBox="0 -960 960 960"
@@ -37,9 +38,10 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/About">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400 ">
+          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>About</p>
             <svg
+              className=" fill-sky-400 "
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               viewBox="0 -960 960 960"
@@ -50,9 +52,10 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/techStack">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400 ">
+          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Tech Stack</p>
             <svg
+              className=" fill-sky-400 "
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               viewBox="0 -960 960 960"
@@ -63,10 +66,11 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/Projects">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400 ">
+          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             {" "}
             <p>Projects</p>
             <svg
+              className=" fill-sky-400 "
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               viewBox="0 -960 960 960"
@@ -77,9 +81,10 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/contacts">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400 ">
+          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Contacts</p>
             <svg
+              className=" fill-sky-400 "
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               viewBox="0 -960 960 960"

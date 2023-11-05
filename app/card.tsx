@@ -24,25 +24,48 @@ const card = () => {
     },
     {
       src: react,
-      name: "REACTJS",
+      name: "TYPESCRIPT",
+      fit: "object-cotain",
+    },
+    {
+      src: react,
+      name: "ASTRO",
+      fit: "object-cotain",
+    },
+    {
+      src: react,
+      name: "NEXTJS",
+      fit: "object-cotain",
+    },
+    {
+      src: react,
+      name: "TAILWIND CSS",
+      fit: "object-cotain",
+    },
+    {
+      src: react,
+      name: "FIREBASE",
       fit: "object-cotain",
     },
   ];
 
   return (
-    <main className="grid md:grid-cols-3 xl:grid-cols-4  justify-between items-center md:items-center md:justify-between  gap-10 ">
+    <main className="grid justify-center p-10 lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 md:gap-20 xl:flex gap-10 ">
       {items.map((item, index) => (
-        <div
-          key={index}
-          className="  grid justify-center items-center   w-[250px] h-[300px]"
-        >
-          <div className=" text-center  shadow-md shadow-slate-500/50 rounded-lg ">
-            <Image
-              className={`w-[200px] h-[200px]  ${item.fit} rounded-lg`}
-              src={item.src}
-              alt="pics"
-            />
-            <p>{item.name}</p>
+        <div key={index} className="w-[250px] h-[300px]">
+          <div className="grid ">
+            <div className="flex justify-center gap-10">
+              <div className=" text-center  shadow-md shadow-slate-500/50 rounded-lg ">
+                <Image
+                  className={`w-[200px] h-[200px]  ${item.fit} rounded-lg`}
+                  src={item.src}
+                  alt="pics"
+                />
+                <p className="font-mono text-blue-200/50 text-2xl font-extrabold">
+                  {item.name}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       ))}
