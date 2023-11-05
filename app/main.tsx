@@ -13,11 +13,11 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="grid lg:flex pt-10 gap-20  justify-center items-center ">
+    <div className="grid lg:flex p-10 gap-20 lg:gap-[10rem]  lg:justify-center  lg:items-center justify-center items-center ">
       <div className="grid gap-5 md:gap-10">
         <div className="flex justify-center">
           <p className={pClass}>
-            <span className=" text-blue-100 font-bold text-3xl md:text-5xl">
+            <span className=" text-blue-100 font-bold text-3xl  md:text-5xl">
               Hi there, 🤖
             </span>{" "}
           </p>
@@ -34,19 +34,21 @@ const Main = () => {
           <p className="flex gap-2  text-xl md:text-4xl font-semibold text-blue-200">
             I’m <span> a</span>
           </p>
-          <Typer
-            words={[
-              "Frontend Developer",
-              "Programmer",
-              "Trouble Shooter",
-              "Music Lover",
-              "Web Designer",
-            ]}
-            loop={0}
-          />
+          <div className="text-purple-500  md:text-3xl">
+            <Typer
+              words={[
+                "Frontend Developer",
+                "Programmer",
+                "Trouble Shooter",
+                "Music Lover",
+                "Web Designer",
+              ]}
+              loop={0}
+            />
+          </div>
         </div>
       </div>
-      <Image src={frame} alt="photo" />
+      <Image className="lg:w-[40rem]" src={frame} alt="photo" />
     </div>
   );
 };
