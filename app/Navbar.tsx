@@ -1,13 +1,27 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import close from "../public/close.svg";
+import Image from "next/image";
 
-const Navbar = (props: { className: string }) => {
+const Navbar = (props: {
+  className: string;
+  onClick: () => unknown;
+  show: boolean;
+}) => {
   return (
     <nav
-      className={
-        "top-0 lg:static fixed right-0 h-[100%] bg-gray-400 lg:bg-transparent  lg:block ml-auto "
-      }
+      className={`top-0 lg:static ${
+        props.show ? "" : "hidden"
+      } fixed right-0 h-[100%] bg-gray-400 lg:bg-transparent  lg:block ml-auto`}
     >
+      <div className=" flex mt-10 lg:mt-0  justify-center items-center ">
+        <button
+          onClick={props.onClick}
+          className=" bg-slate-900/40 lg:hidden rounded"
+        >
+          <Image src={close} alt="close" />
+        </button>
+      </div>
       <ul className={props.className}>
         <li>
           <Link href="/" className="flex justify-center items-center">

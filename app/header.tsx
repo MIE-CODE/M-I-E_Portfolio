@@ -21,12 +21,18 @@ const Header = () => {
               </span>
             </span>
           </span>
-          srael.
+          Israel.
         </div>
-        <Navbar className="grid lg:flex gap-10 pt-20 font-bold xl:gap-20 text-2xl" />
+        <Navbar
+          show={navBar}
+          onClick={() => {
+            setNavBar(false);
+          }}
+          className="grid lg:flex gap-20 lg:gap-10   pt-20 lg:pt-0 font-bold xl:gap-20 text-2xl"
+        />
         <button
           onClick={() => {
-            setNavBar(!navBar);
+            setNavBar(true);
           }}
           className=" bg-slate-400 rounded "
         >
