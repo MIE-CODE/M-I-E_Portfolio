@@ -28,7 +28,7 @@ const Header = () => {
           onClick={() => {
             setNavBar(false);
           }}
-          className="grid lg:flex gap-20 lg:gap-10   pt-20 lg:pt-0 font-bold xl:gap-20 text-2xl"
+          className="grid lg:flex gap-20 lg:gap-5 lg:text-xl items-center md:pl-5 p-5    pt-20 lg:pt-0 font-bold xl:gap-20 text-2xl"
         />
         <button
           onClick={() => {
@@ -39,7 +39,7 @@ const Header = () => {
           <Image
             src={menu}
             alt="menu"
-            className="lg:hidden h-[40px] w-[40px]"
+            className="lg:hidden  h-[40px] w-[40px]"
           />
         </button>
       </div>

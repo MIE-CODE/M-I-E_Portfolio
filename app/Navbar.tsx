@@ -12,7 +12,7 @@ const Navbar = (props: {
     <nav
       className={`top-0 lg:static ${
         props.show ? "" : "hidden"
-      } fixed right-0 h-[100%] md:w-[30rem] lg:w-auto  bg-gray-800/100 lg:bg-transparent text-sky-400  lg:block ml-auto`}
+      } fixed right-0 h-[100%] md:w-[20rem] lg:w-auto z-10  bg-gray-800/100 lg:bg-transparent text-sky-400  lg:block ml-auto`}
     >
       <div className=" flex mt-10 lg:mt-0  justify-center items-center ">
         <button
@@ -24,7 +24,7 @@ const Navbar = (props: {
       </div>
       <ul className={`${props.className} `}>
         <Link href="/">
-          <li className="flex transition-shadow  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
+          <li className="flex transition-shadow  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-1 lg:p-2 w-40 lg:w-fit rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Home</p>
             <svg
               className=" fill-sky-400 "
@@ -38,7 +38,7 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/About">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
+          <li className="flex lg:p-2 w-40  lg:w-fit items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>About</p>
             <svg
               className=" fill-sky-400 "
@@ -52,7 +52,7 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/techStack">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
+          <li className="flex lg:p-2 w-fit lg:w-fit whitespace-nowrap  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Tech Stack</p>
             <svg
               className=" fill-sky-400 "
@@ -66,7 +66,7 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/Projects">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
+          <li className="flex lg:p-2 w-40 lg:w-fit  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             {" "}
             <p>Projects</p>
             <svg
@@ -81,7 +81,7 @@ const Navbar = (props: {
           </li>
         </Link>
         <Link href="/contacts">
-          <li className="flex   items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
+          <li className="flex lg:p-2 w-40 lg:w-fit  items-center lg:flex lg:justify-center lg:items-center border-sky-200 border p-2 rounded-lg hover:text-[#483285] hover:bg-sky-400/50 ">
             <p>Contacts</p>
             <svg
               className=" fill-sky-400 "
