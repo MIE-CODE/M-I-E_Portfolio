@@ -13,7 +13,7 @@ const Typer = (props: {
   });
 
   return (
-    <div className="text-purple-500">
+    <div className="text-purple-500 md:text-3xl">
       {text} <Cursor />
     </div>
   );

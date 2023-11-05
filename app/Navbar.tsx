@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Navbar = (props: { className: string }) => {
   return (
-    <nav className={"hidden lg:block ml-auto"}>
+    <nav
+      className={
+        "top-0 lg:static fixed right-0 h-[100%] bg-gray-400 lg:bg-transparent  lg:block ml-auto "
+      }
+    >
       <ul className={props.className}>
         <li>
           <Link href="/" className="flex justify-center items-center">
