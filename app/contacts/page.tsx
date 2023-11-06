@@ -42,14 +42,14 @@ const page = () => {
             <Image className="w-5 h-5" src={twitter} alt="twitter" />
           </Link>
           <Link
-            href={"#"}
+            href={"https://mail.google.com/mail/u/0/#inbox"}
             className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
           >
             <p className=" font-bold font-test text-sky-50">Email</p>
             <Image className="w-5 h-5" src={email} alt="email" />
           </Link>
           <Link
-            href={"#"}
+            href={"/cv.pdf"}
             className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
           >
             <p className=" font-bold font-test text-sky-50">MY CV</p>
