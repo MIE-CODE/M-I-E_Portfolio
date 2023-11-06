@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../header";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -12,7 +13,38 @@ const page = () => {
         <p className="animate-trans-right font-manrope text-sky-100">
           Connect With (M’I’E)
         </p>
-        <div className="grid justify-center items-center">fkj</div>
+        <div className="grid justify-center gap-10 items-center pt-10">
+          <Link
+            href={"#"}
+            className="border w-[15rem] h-12 bg-gradient-to-r from-slate-600 to-slate-400"
+          >
+            <p>Linkden</p>
+          </Link>
+          <Link
+            href={"#"}
+            className="border w-[15rem] h-12 bg-gradient-to-r from-slate-600 to-slate-400"
+          >
+            <p>Linkden</p>
+          </Link>
+          <Link
+            href={"#"}
+            className="border w-[15rem] h-12 bg-gradient-to-r from-slate-600 to-slate-400"
+          >
+            <p>Linkden</p>
+          </Link>
+          <Link
+            href={"#"}
+            className="border w-[15rem] h-12 bg-gradient-to-r from-slate-600 to-slate-400"
+          >
+            <p>Linkden</p>
+          </Link>
+          <Link
+            href={"#"}
+            className="border w-[15rem] h-12 bg-gradient-to-r from-slate-600 to-slate-400"
+          >
+            <p>Linkden</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

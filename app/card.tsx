@@ -4,6 +4,11 @@ import react from "../public/reactjs.png";
 import Html from "../public/html.png";
 import css from "../public/css.png";
 import js from "../public/js.png";
+import Ts from "../public/Typescript.jpeg";
+import astro from "../public/Astro.png";
+import nextjs from "../public/Next_js.jpeg";
+import tailwind from "../public/Taiwind.png";
+import firebase from "../public/Firebase.png";
 
 const card = () => {
   const items = [
@@ -23,27 +28,27 @@ const card = () => {
       fit: "object-cover",
     },
     {
-      src: react,
+      src: Ts,
       name: "TYPESCRIPT",
       fit: "object-cotain",
     },
     {
-      src: react,
+      src: astro,
       name: "ASTRO",
       fit: "object-cotain",
     },
     {
-      src: react,
+      src: nextjs,
       name: "NEXTJS",
       fit: "object-cotain",
     },
     {
-      src: react,
+      src: tailwind,
       name: "TAILWIND CSS",
       fit: "object-cotain",
     },
     {
-      src: react,
+      src: firebase,
       name: "FIREBASE",
       fit: "object-cotain",
     },
