@@ -21,7 +21,7 @@ const page = () => {
         </p>
         <div className="grid justify-center gap-10 md:gap-14 lg:gap-20  items-center pt-10">
           <Link
-            href={"www.linkedin.com/in/menyaga-enyo-israel-648401228"}
+            href={"https://linkedin.com/in/menyaga-enyo-israel-648401228"}
             className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
           >
             <p className=" font-bold font-test text-sky-50">Linkden</p>
@@ -42,7 +42,7 @@ const page = () => {
             <Image className="w-5 h-5" src={twitter} alt="twitter" />
           </Link>
           <Link
-            href={"https://mail.google.com/mail/u/0/#inbox"}
+            href={"mailto:israelvictor126@gmail.com"}
             className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
           >
             <p className=" font-bold font-test text-sky-50">Email</p>
