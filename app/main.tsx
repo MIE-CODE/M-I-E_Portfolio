@@ -40,8 +40,8 @@ const Main = () => {
                 "Frontend Developer",
                 "Programmer",
                 "Trouble Shooter",
+                "Software developer",
                 "Music Lover",
-                "Web Designer",
               ]}
               loop={0}
             />
