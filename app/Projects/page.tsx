@@ -6,15 +6,15 @@ import Link from "next/link";
 const page = () => {
   const projects = [
     {
-      GithubLink: "df",
+      GithubLink: "https://github.com/MIE-CODE",
       liveLink: "df",
     },
     {
-      GithubLink: "df",
+      GithubLink: "https://github.com/MIE-CODE",
       liveLink: "df",
     },
     {
-      GithubLink: "df",
+      GithubLink: "https://github.com/MIE-CODE",
       liveLink: "df",
     },
   ];
@@ -31,8 +31,8 @@ const page = () => {
         <div className="grid  gap-10 justify-center items-center   md:grid-cols-2 lg:grid-cols-3 mt-10  text-4xl font-extrabold text-blue-700">
           {projects.map((project, index) => (
             <div key={index} className="flex justify-center">
-              <div className="flex justify-center items-center gap-1 w-[250px] h-[300px] shadow-slate-500/50 rounded-lg shadow-md">
-                <div className="text-sm grid gap-5  ">
+              <div className="flex relative justify-center items-center gap-1 w-[250px] h-[300px] shadow-slate-500/50 rounded-lg shadow-md">
+                <div className="text-sm flex justify-between w-[200px] gap-5  absolute bottom-[10px]  ">
                   <Link
                     href={project.GithubLink}
                     className="w-max h-max hover:bg-slate-50/5  p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
@@ -40,8 +40,8 @@ const page = () => {
                     Github
                   </Link>
                   <Link
-                    href={project.GithubLink}
-                    className=" w-max h-max p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
+                    href={project.liveLink}
+                    className=" w-max h-max p-2 hover:bg-slate-50/5 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
                   >
                     Live
                   </Link>
