@@ -9,7 +9,7 @@ const Header = () => {
   const [navBar, setNavBar] = useState(false);
   return (
     <>
-      <div className="flex relative  font-test w-full justify-between items-center py-[2rem] px-[2rem] border-b-4 border-gray-400">
+      <div className="flex z-40 fixed top-0 left-0 right-0  bg-sky-950 font-test w-full justify-between items-center py-[2rem] px-[2rem] border-b-4 border-gray-400">
         <div className=" font-extrabold   text-blue-200 text-4xl">
           {" "}
           <span className="text-blue-400 relative  font-extrabold">

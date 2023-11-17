@@ -7,7 +7,7 @@ import Background from "./Background";
 export default function Home() {
   return (
     <>
-      <main className="w-Screen font-test  bg-gray-900 h-[100vh] ">
+      <main className="w-Screen font-test relative  bg-gray-900 h-[100vh] ">
         <Header />
         <Main />
       </main>

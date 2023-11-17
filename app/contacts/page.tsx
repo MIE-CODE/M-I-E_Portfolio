@@ -10,7 +10,7 @@ import download from "../../public/download.svg";
 
 const page = () => {
   return (
-    <div className="w-Screen  bg-gray-900 h-[100vh]">
+    <div className="w-Screen pt-[13rem] bg-gray-900 max-h-max">
       <Header />
       <div className="p-5 pb-0">
         <p className=" font-mono text-blue-200/50 text-4xl font-extrabold">
@@ -19,7 +19,7 @@ const page = () => {
         <p className="animate-trans-right font-manrope text-sky-100">
           Connect With (M’I’E)
         </p>
-        <div className="grid justify-center gap-10 md:gap-14 lg:gap-20  items-center pt-10">
+        <div className="grid justify-center gap-10 md:gap-14 lg:gap-20  items-center pt-10 pb-10">
           <Link
             href={"https://linkedin.com/in/menyaga-enyo-israel-648401228"}
             className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
