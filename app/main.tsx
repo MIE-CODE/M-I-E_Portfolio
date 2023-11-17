@@ -13,7 +13,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="grid lg:flex p-10 gap-20 lg:gap-[10rem]  lg:justify-center  lg:items-center justify-center items-center ">
+    <div className="grid lg:flex p-10 gap-20 lg:gap-[10rem] pt-[13rem]   lg:justify-center  lg:items-center justify-center items-center ">
       <div className="grid gap-5 md:gap-10">
         <div className="flex justify-center">
           <p className={pClass}>

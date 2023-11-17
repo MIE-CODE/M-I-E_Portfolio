@@ -47,13 +47,13 @@ const page = () => {
                 <div className="text-sm flex justify-between w-[200px] gap-5  absolute bottom-[10px]  ">
                   <Link
                     href={project.GithubLink}
-                    className="w-max h-max hover:bg-slate-50/5  p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
+                    className="w-max h-max hover:bg-slate-50/5 hover:shadow-none p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
                   >
                     Github
                   </Link>
                   <Link
                     href={project.liveLink}
-                    className=" w-max h-max p-2 hover:bg-slate-50/5 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
+                    className=" w-max h-max p-2 hover:bg-slate-50/5 hover:shadow-none flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
                   >
                     Live-Link
                   </Link>
