@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Header from "../header";
+import Link from "next/link";
 
 const page = () => {
   const projects = [
@@ -18,7 +19,7 @@ const page = () => {
     },
   ];
   return (
-    <div className="w-Screen  bg-gray-900 ">
+    <div className="w-Screen  bg-gray-900 h-[100vh] max-h-max ">
       <Header />
       <div className="p-5 pb-0">
         <p className=" font-mono text-blue-200/50 text-4xl font-extrabold">
@@ -27,57 +28,28 @@ const page = () => {
         <p className="animate-trans-right font-manrope text-sky-100">
           (M’I’E) Projects
         </p>
-        <div className="flex-col justify-center mt-10 items-center text-4xl font-extrabold text-blue-700">
+        <div className="grid  gap-10 justify-center items-center   md:grid-cols-2 lg:grid-cols-3 mt-10  text-4xl font-extrabold text-blue-700">
           {projects.map((project, index) => (
-            <div key={index} className="flex justify-center gap-10 p-5">
-              <div className="flex justify-center items-center w-[250px] h-[300px] shadow-slate-500/50 rounded-lg shadow-md">
-                <div className=" text-sm w-[200px] h-[250px] border">
-                  <div className=" ">
-                    <p>;eflrhgmkw</p>
-                  </div>
-                  <div>lsdmkefjvrnhf</div>
+            <div key={index} className="flex justify-center">
+              <div className="flex justify-center items-center gap-1 w-[250px] h-[300px] shadow-slate-500/50 rounded-lg shadow-md">
+                <div className="text-sm grid gap-5  ">
+                  <Link
+                    href={project.GithubLink}
+                    className="w-max h-max hover:bg-slate-50/5  p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
+                  >
+                    Github
+                  </Link>
+                  <Link
+                    href={project.GithubLink}
+                    className=" w-max h-max p-2 flex justify-center items-center shadow-slate-500/50 rounded-lg shadow-md"
+                  >
+                    Live
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        {/* <div className="grid justify-center gap-10 md:gap-14 lg:gap-20  items-center pt-10">
-          <Link
-            href={"https://linkedin.com/in/menyaga-enyo-israel-648401228"}
-            className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
-          >
-            <p className=" font-bold font-test text-sky-50">Linkden</p>
-            <Image className="w-5 h-5" src={linkden} alt="linkden" />
-          </Link>
-          <Link
-            href={"https://github.com/MIE-CODE"}
-            className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
-          >
-            <p className=" font-bold font-test text-sky-50">GITHUB</p>
-            <Image className="w-5 h-5" src={github} alt="github" />
-          </Link>
-          <Link
-            href={"https://x.com/M_I_E_CODE?t=EAhq3CpZgmgWEPLt6lrQiA&s=09"}
-            className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
-          >
-            <p className=" font-bold font-test text-sky-50">Twitter</p>
-            <Image className="w-5 h-5" src={twitter} alt="twitter" />
-          </Link>
-          <Link
-            href={"mailto:israelvictor126@gmail.com"}
-            className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
-          >
-            <p className=" font-bold font-test text-sky-50">Email</p>
-            <Image className="w-5 h-5" src={email} alt="email" />
-          </Link>
-          <Link
-            href={"/cv.pdf"}
-            className="flex justify-between px-3 items-center  w-[15rem] md:w-[40rem] md:h-12 lg:w-[50rem] xl:w-[70rem] rounded-lg h-10 bg-gradient-to-r from-gray-600 to-gray-400"
-          >
-            <p className=" font-bold font-test text-sky-50">MY CV</p>
-            <Image className="w-5 h-5" src={download} alt="cv" />
-          </Link>
-        </div> */}
       </div>
     </div>
   );

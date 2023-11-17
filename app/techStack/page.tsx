@@ -3,12 +3,6 @@ import Header from "../header";
 import Card from "../card";
 
 const page = () => {
-  const stacks = [
-    {
-      GithubLink: "df",
-      liveLink: "df",
-    },
-  ];
   return (
     <div className="  bg-gray-900   max-h-max ">
       <Header />

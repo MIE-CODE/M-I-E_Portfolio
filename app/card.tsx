@@ -61,7 +61,7 @@ const card = () => {
   ];
 
   return (
-    <main className="grid justify-center p-10 lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 md:gap-20 gap-10 ">
+    <main className="grid   p-10 lg:grid-cols-3 2xl:grid-cols-4 md:grid-cols-2 md:gap-20 gap-10 ">
       {items.map((item, index) => (
         <div key={index} className="w-[250px] h-[300px]">
           <div className="grid ">
