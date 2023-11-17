@@ -13,18 +13,13 @@ import firebase from "../public/Firebase.png";
 const card = () => {
   const items = [
     {
-      src: Html,
-      name: "HTML",
-      fit: "object-cover",
-    },
-    {
-      src: css,
-      name: "CSS",
-      fit: "object-cover",
-    },
-    {
       src: js,
       name: "JAVASCRIPT",
+      fit: "object-cover",
+    },
+    {
+      src: react,
+      name: "Reactjs",
       fit: "object-cover",
     },
     {
@@ -33,24 +28,35 @@ const card = () => {
       fit: "object-cotain",
     },
     {
-      src: astro,
-      name: "ASTRO",
-      fit: "object-cotain",
-    },
-    {
       src: nextjs,
       name: "NEXTJS",
       fit: "object-cotain",
     },
     {
-      src: tailwind,
-      name: "TAILWIND CSS",
+      src: astro,
+      name: "ASTRO",
       fit: "object-cotain",
     },
     {
       src: firebase,
       name: "FIREBASE",
       fit: "object-cotain",
+    },
+
+    {
+      src: tailwind,
+      name: "TAILWIND CSS",
+      fit: "object-cotain",
+    },
+    {
+      src: Html,
+      name: "HTML",
+      fit: "object-cover",
+    },
+    {
+      src: css,
+      name: "CSS",
+      fit: "object-cover",
     },
   ];
 
